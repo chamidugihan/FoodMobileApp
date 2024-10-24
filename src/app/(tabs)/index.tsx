@@ -1,13 +1,16 @@
-import { View } from 'react-native';
-import products from '@/assets/data/products';
-import ProductItemList from '@/src/components/productItemList';
+import {  View } from 'react-native';
+import products from '@assets/data/products';
+import ProductListItem from '@components/productItemList';
+
 
 
 export default function MenuScreen() {
-  return (<View>
-    <ProductItemList product={products[5]}/>
-    <ProductItemList product={products[4]}/>
-  </View>);
+  return (
+    <View>
+      <ProductListItem product={products[0]} />
+      <ProductListItem product={products[1]} />
+    </View>
+  );
 }
 
 
